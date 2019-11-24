@@ -1,0 +1,286 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <link rel="shortcut icon" href="favicon.ico" />
+    <title>Lập trình viên bình dương - Trang Chủ</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link href="/Content/bootstrap.css" rel="stylesheet" />
+    <link href="/Content/font-awesome.css" rel="stylesheet" />
+    <link href="/plugin/homeycombs/css/homeycombs.css" rel="stylesheet" />
+    <link href="/Content/boostrap-utility.css" rel="stylesheet" />
+    <link href="/plugin/particles/css/particles.css" rel="stylesheet" />
+    <link href="/Content/jquery.fancybox.css" rel="stylesheet" />
+    <link href="/Content/common.css" rel="stylesheet" />
+    <link href="/Content/style.css" rel="stylesheet" />
+
+</head>
+<body>
+    <nav id="main-nav" class="navbar navbar-expand-lg navbar-dark bg-red fixed-top">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">
+                <img src="/Content//images/logo.png" />
+            </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav mr-auto">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="#">Trang chủ <span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">
+                            Giới thiệu
+
+                        </a>
+
+                    </li>
+
+                    <li class="nav-item btn-contact">
+                        <a class="nav-link" href="#">
+                            Đóng góp ý kiến
+                            <span id="dot" class="d-none d-sm-none d-md-block">
+                                <span class="ping"></span>
+                            </span>
+                        </a>
+                    </li>
+                </ul>
+                <button type="button" class="btn btn-light mr-auto btn-post">
+                    <i class="fa fa-cloud-upload"></i>&nbsp;
+                    Đăng thông tin
+                </button>
+                <ul class="account">
+                    <li>
+                        <a href="#" data-toggle="modal" data-target="#modal-login">
+                            <i class="fa fa-sign-in"></i>
+                            &nbsp;
+                            Đăng nhập
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" data-toggle="modal" data-target="#modal-register">
+                            <i class="fa fa-key"></i>
+                            &nbsp;
+                            Đăng kí
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+
+
+    <main id="main">
+
+        <section id="post">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12">
+                        <h3>Thông tin công ty</h3>
+                    </div>
+                    <div class="col-12 col-md-4 avatar">
+                        <div id="image-preview" style="background-image:url('/images/Company/FPT-transparent.png');background-size:contain;background-position:center center;background-repeat:no-repeat;border-radius:0 !important">
+                            <label for="image-upload" id="image-label">Chọn hình</label>
+                            <input type="file" name="image" id="image-upload" />
+                        </div>
+
+                        <p>Vui lòng chọn hình công ty</p>
+                    </div>
+                    <div class="col-12 col-md-8">
+                        <div class="form-wrapper">
+                            <div class="container">
+                                <div class="row">
+                                    <div class="form-group col-12">
+                                        <label class="form-label">Tên công ty</label>
+                                        <input class="form-input" type="text" />
+                                    </div>
+                                    <div class="form-group col-12">
+                                        <label class="form-label">Số điện thoại</label>
+                                        <input class="form-input" type="text" />
+                                    </div>
+                                    <div class="form-group col-12 col-md-6">
+                                        <label class="form-label">Địa chỉ Email</label>
+                                        <input class="form-input" type="text" />
+                                    </div>
+                                    <div class="form-group col-12 col-md-6">
+                                        <label class="form-label">Địa chỉ Website</label>
+                                        <input class="form-input" type="text" />
+                                    </div>
+                                    <div class="form-group col-12">
+                                        <label class="form-label">Giới thiệu sơ lược</label>
+                                        <input class="form-input" type="text" />
+                                    </div>
+                                    <div class="form-group col-12">
+                                        <button type="button" class="btn btn-primary">
+                                            Đăng bài
+                                        </button>
+                                        <button type="button" class="btn btn-outline-primary">
+                                            <i class="fa fa-refresh"></i>
+                                            Nhập lại
+                                        </button>
+                                    </div>
+                                    <div class="form-group col-12">
+                                        <div class="alert alert-success alert-dismissible fade show" role="alert">
+                                            <strong>Chúc mừng!</strong> Bạn đã đăng bài thành công.
+                                            <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+                                                <span aria-hidden="true">&times;</span>
+                                            </button>
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+
+
+
+    <!-- Modal Login-->
+    <div class="modal fade" id="modal-login">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header text-center">
+                    <h5 class="modal-title">Đăng nhập</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body p-5">
+                    <div class="form-group">
+                        <input type="text" class="form-control form-control-lg" placeholder="Tên đăng nhập" />
+                    </div>
+                    <div class="form-group">
+                        <input type="password" class="form-control form-control-lg" placeholder="Mật khẩu" />
+                    </div>
+                    <div class="form-group">
+                        <div class="checkbox checkbox-info p-1">
+                            <input id="check3" class="styled" type="checkbox" checked>
+                            <label for="check3">
+                                Ghi nhớ
+                            </label>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <div class="alert alert-success alert-dismissible fade show" role="alert">
+                            <strong>Chúc mừng!</strong> Bạn đã đăng bài thành công.
+                            <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+                                <span aria-hidden="true">&times;</span>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="form-group text-center">
+                        <button class="btn btn-primary">Đăng nhập</button>
+                    </div>
+                    <div class="form-group text-center">
+                        <a href="#" class="text-info font-italic">
+                            <i class="fa fa-question-circle"></i>
+                            Quên mật khẩu
+                        </a>
+                    </div>
+
+                    <div class="form-group text-center">
+                        <span href="#" class="text-muted">
+                            Bạn chưa có tài khoản?
+                            <a href="#" id="link-register" class="text-primary">Đăng kí tại đây</a>
+                        </span>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal Login-->
+    <div class="modal fade" id="modal-register">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header text-center">
+                    <h5 class="modal-title">Đăng ký</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body p-5">
+                    <div class="form-group">
+                        <input type="text" class="form-control form-control-lg" placeholder="Tên đăng nhập" />
+                    </div>
+                    <div class="form-group">
+                        <input type="text" class="form-control form-control-lg" placeholder="Email" />
+                    </div>
+                    <div class="form-group">
+                        <input type="password" class="form-control form-control-lg" placeholder="Mật khẩu" />
+                    </div>
+                    <div class="form-group">
+                        <input type="password" class="form-control form-control-lg" placeholder="Nhập lại mật khẩu" />
+                    </div>
+                    <div class="form-group">
+                        <div class="checkbox checkbox-info p-1">
+                            <input id="check4" class="styled" type="checkbox" checked>
+                            <label for="check4">
+                                Đồng ý với điều khoản
+                            </label>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <div class="alert alert-success alert-dismissible fade show" role="alert">
+                            <strong>Chúc mừng!</strong> Bạn đã đăng bài thành công.
+                            <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+                                <span aria-hidden="true">&times;</span>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="form-group text-center">
+                        <button class="btn btn-primary">Đăng nhập</button>
+                    </div>
+                    <div class="form-group text-center">
+                        <span href="#" class="text-muted">
+                            Bạn đã có tài khoản?
+                            <a href="#" id="link-login" class="text-primary">Đăng nhập</a>
+                        </span>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <button id="btn-back-top" class="btn btn-back-top">
+        <i class="fa fa-angle-up"></i>
+    </button>
+
+    <section id="script">
+        <script src="/Scripts/jquery-3.0.0.js"></script>
+        <script src="/Scripts/popper.js"></script>
+        <script src="/Scripts/bootstrap.js"></script>
+        <script src="/plugin/homeycombs/js/jquery.homeycombs.js"></script>
+        <script src="/Scripts/jquery.fancybox.js"></script>
+        <script src="/Scripts/particles.min.js"></script>
+        <script src="/plugin/particles/js/index.js"></script>
+        <script src="/Scripts/placeholderTypewriter.js"></script>
+        <script src="/Scripts/jquery.uploadPreview.js"></script>
+        <script src="/Scripts/script.js"></script>
+        <script type="text/javascript">
+            $(document).ready(function () {
+                $.uploadPreview({
+                    input_field: "#image-upload",   // Default: .image-upload
+                    preview_box: "#image-preview",  // Default: .image-preview
+                    label_field: "#image-label",    // Default: .image-label
+                    label_default: "Chọn hình",   // Default: Choose File
+                    label_selected: "Đổi hình",  // Default: Change File
+                    no_label: false                 // Default: false
+                });
+            });
+        </script>
+    </section>
+</body>
+</html>

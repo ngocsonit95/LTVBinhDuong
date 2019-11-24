@@ -1,0 +1,123 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="MasterPage.master.cs" Inherits="MasterPage_MasterPage" %>
+
+<%@ Register Src="~/UserControl/ucCSS.ascx" TagPrefix="uc1" TagName="ucCSS" %>
+<%@ Register Src="~/UserControl/ucJS.ascx" TagPrefix="uc1" TagName="ucJS" %>
+<%@ Register Src="~/UserControl/ucMenu.ascx" TagPrefix="uc1" TagName="ucMenu" %>
+<%@ Register Src="~/UserControl/ucModalLogin.ascx" TagPrefix="uc1" TagName="ucModalLogin" %>
+<%@ Register Src="~/UserControl/ucModalRegister.ascx" TagPrefix="uc1" TagName="ucModalRegister" %>
+<%@ Register Src="~/UserControl/ucForgotPassword.ascx" TagPrefix="uc1" TagName="ucForgotPassword" %>
+
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+    <meta charset="utf-8" />
+    <%--ucCSS--%>
+    <uc1:ucCSS runat="server" ID="ucCSS" />
+
+    <asp:ContentPlaceHolder ID="head" runat="server">
+        <%--Nhúng CSS con--%>
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <form id="form1" runat="server">
+        <%-- Load trang  --%>
+        <div class="align-self-center someBlock">
+            <div class="preloader">
+                <div class="preloader-container">
+                    <div class="preloader-animation"></div>
+                </div>
+            </div>
+        </div>
+        <%-- Chổ lưu ẩn sesion sử dụng cho jquery --%>
+        <input runat="server" clientidmode="static" id="input_Session" type="text" value="" style="display: none" />
+        <%--ucMenu--%>
+        <uc1:ucMenu runat="server" ID="ucMenu" />
+
+        <asp:ContentPlaceHolder ID="content" runat="server">
+            <%-- Vị trí nhúng trang con --%>
+        </asp:ContentPlaceHolder>
+
+        <%--ucModalLogin--%>
+        <uc1:ucModalLogin runat="server" ID="ucModalLogin" />
+
+
+        <%--ucModalRegister--%>
+        <uc1:ucModalRegister runat="server" ID="ucModalRegister" />
+
+        <%-- ucForgotPassword --%>
+        <uc1:ucForgotPassword runat="server" ID="ucForgotPassword" />
+
+
+        <%-- Nút backRoll --%>
+        <button id="btn-back-top" class="btn btn-back-top">
+            <i class="fa fa-angle-up"></i>
+        </button>
+
+        <footer>
+            <div class="footer-bottom text-center">
+                <div class="container-fluid">
+                    <div class="row">
+                        <div class="col-lg-4 col-sm-6 col-12 footer-contact">
+                            <div class="img-logo">
+                                <a runat="server" href="~/Default.aspx">
+                                    <img src="/Content/images/logo.png" style="width:180px" runat="server" />
+                                </a>
+                            </div>
+                            <small class="text-justify">Với mục tiêu trở thành cầu nối giữa nhà tuyển dụng với lập trình viên Bình Dương
+                            chúng tôi tạo ra website đáp ứng nhu cầu tìm kiếm nguồn nhân lực IT đứng đầu Bình Dương, đồng thời
+                            tạo ra sân chơi bổ ích cho các "lập trình viên Bình Dương" nói riêng và "dân lập trình" nói chung.
+                            Từ đó góp phần thân thiện mối quan hệ giữa các lập trình viên Bình Dương với nhau,
+                            cùng nhau giúp đỡ vì một cộng đồng nhân lực IT Bình Dương phát triển lớn mạnh.
+                            </small>
+                        </div>
+                        <div class="col-lg-4 col-sm-6 col-12">
+                            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15668.236061460939!2d106.70743170000001!3d10.9589148!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x20b3f9b4c8fdc732!2zVHLGsOG7nW5nIMSR4bqhaSBo4buNYyBraW5oIHThur8ga-G7uSB0aHXhuq10IELDrG5oIETGsMahbmcgKEPGoSBz4bufIDJBKQ!5e0!3m2!1svi!2s!4v1538183525119" width="100%" height="250" frameborder="0" style="border: 0" allowfullscreen></iframe>
+
+
+                        </div>
+                        <div class="col-lg-4 col-12">
+
+                            <div class="footer-social-icons">
+                                <p>
+                                    <a class="facebook" href="#">
+                                        <i class="fa fa-facebook-official"></i>
+                                        <span>Facebook</span>
+                                    </a>
+                                    <span>Liên hệ qua Facebook</span>
+                                </p>
+                                <p>
+                                    <a class="twitter" href="#">
+                                        <i class="fa fa-twitter"></i>
+                                        <span>Twitter</span>
+                                    </a>
+                                    <span>Liên hệ qua Twitter</span>
+                                </p>
+                                <p>
+                                    <a class="googleplus" href="#">
+                                        <i class="fa fa-google-plus"></i>
+                                        <span>Google+</span>
+                                    </a>
+                                    <span>&nbsp; Liên hệ qua Google+</span>
+                                </p>
+
+                            </div>
+                        </div>
+                        <div class="col-12 copyrights">
+                            <p>© 2018 Bản quyền thuộc LTVBinhDuong.com</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+
+        <%--ucJS--%>
+        <uc1:ucJS runat="server" ID="ucJS" />
+
+        <asp:ContentPlaceHolder ID="footer" runat="server">
+            <%--Nhúng Javascript con về sau--%>
+        </asp:ContentPlaceHolder>
+    </form>
+</body>
+</html>

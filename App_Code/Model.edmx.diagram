@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="2.0" xmlns:edmx="http://schemas.microsoft.com/ado/2008/10/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2008/10/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="b3710c924db14417b6d0696396757fa5" Name="Diagram1">
+        <EntityTypeShape EntityType="DBModel.Admin" Width="1.5" PointX="0.75" PointY="4.625" />
+        <EntityTypeShape EntityType="DBModel.Company" Width="1.5" PointX="0.75" PointY="0.75" />
+        <EntityTypeShape EntityType="DBModel.Opinion" Width="1.5" PointX="5.25" PointY="3.25" />
+        <EntityTypeShape EntityType="DBModel.Report" Width="1.5" PointX="5.25" PointY="6.75" />
+        <EntityTypeShape EntityType="DBModel.School" Width="1.5" PointX="7.75" PointY="0.875" />
+        <EntityTypeShape EntityType="DBModel.Skill" Width="1.5" PointX="3" PointY="12" />
+        <EntityTypeShape EntityType="DBModel.sysdiagram" Width="1.5" PointX="7.75" PointY="4.875" />
+        <EntityTypeShape EntityType="DBModel.User" Width="1.5" PointX="3" PointY="3.5" />
+        <AssociationConnector Association="DBModel.FK_Skill_Admin" />
+        <AssociationConnector Association="DBModel.FK_Users_Admin" />
+        <AssociationConnector Association="DBModel.FK_Users_Company" />
+        <AssociationConnector Association="DBModel.FK_Opinion_Users" />
+        <AssociationConnector Association="DBModel.FK_Report_Users" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>

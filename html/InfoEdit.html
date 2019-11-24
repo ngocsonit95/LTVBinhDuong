@@ -1,0 +1,186 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <link rel="shortcut icon" href="favicon.ico" />
+    <title>Lập trình viên bình dương - Trang Chủ</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link href="/Content/bootstrap.css" rel="stylesheet" />
+    <link href="/Content/font-awesome.css" rel="stylesheet" />
+    <link href="/plugin/homeycombs/css/homeycombs.css" rel="stylesheet" />
+    <link href="/plugin/particles/css/particles.css" rel="stylesheet" />
+    <link href="/Content/jquery.fancybox.css" rel="stylesheet" />
+    <link href="/plugin/taginput/css/select2.css" rel="stylesheet" />
+    <link href="/Content/style.css" rel="stylesheet" />
+    <link href="/Content/common.css" rel="stylesheet" />
+</head>
+<body>
+    <main>
+        <section id="edit-info">
+            <div class="container-fluid">
+                <div class="form-row">
+                    <div class="form-group col-12">
+                        <div id="image-preview" style="background-image:url('/images/1.jpg');background-size:cover;background-position:center center">
+                            <label for="image-upload" id="image-label">Chọn hình</label>
+                            <input type="file" name="image" id="image-upload" />
+                        </div>
+                    </div>
+                    <div class="form-group col-md-4">
+                        <label>Họ và tên</label>
+                        <input type="email" class="form-control" placeholder="Nguyễn Văn Quyền">
+                    </div>
+                    <div class="form-group col-md-4">
+                        <label>Số điện thoại</label>
+                        <input type="text" class="form-control" placeholder="0972332803">
+                    </div>
+                    <div class="form-group col-md-4">
+                        <label>Năm tốt nghiệp</label>
+                        <input type="text" class="form-control" placeholder="2018">
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label>Email</label>
+                    <input type="text" class="form-control" placeholder="vanquyenktktbd@gmail.com">
+                </div>
+                <div class="form-group">
+                    <label>Địa chỉ</label>
+                    <input type="text" class="form-control" placeholder="1234 Main St">
+                </div>
+                <div class="form-group">
+                    <label>Địa chỉ Facebook</label>
+                    <input type="text" class="form-control" placeholder="Fb.com/QuyenIT">
+                </div>
+                <div class="form-group">
+                    <label>Sở trường</label>
+                    <select class="js-multiple-skill" name="states[]" multiple="multiple">
+                        <option value="AL">Asp.net</option>
+                        <option value="WY">PHP</option>
+                        <option value="AL">Jquery</option>
+                        <option value="WY">SQL Server</option>
+                    </select>
+                    <small class="form-text text-muted">Ví dụ: Asp.Net, C, C++, C#, SQL Server, HTML5, Javascript ...</small>
+                </div>
+                <div class="form-group">
+                    <label>Vị trí làm việc</label>
+                    <textarea class="form-control" rows="3">Lập trình viên .NET</textarea>
+                    <small class="form-text text-muted">Ví dụ: Lập trình viên, Leader, Tester, ...</small>
+                </div>
+                <div class="form-group">
+                    <div class="alert alert-success alert-dismissible fade show" role="alert">
+                        <strong>Chúc mừng!</strong> Bạn đã đăng bài thành công.
+                        <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                </div>
+                <div class="form-row">
+                    <div class="form-group col-md-6">
+                        <button type="submit" class="btn btn-primary form-control">
+                            <i class="fa fa-pencil"></i>
+                            Chỉnh sửa
+                        </button>
+                    </div>
+                    <div class="form-group col-md-6">
+                        <a class="btn btn-primary  form-control" href="#" data-toggle="modal" data-target="#modal-reportStepOne">
+                            <i class="fa fa-repeat"></i>
+                            Báo cáo sai thông tin
+                        </a>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <div class="modal fade" id="modal-reportStepOne">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-header text-center">
+                        <h5 class="modal-title">Tin này có vấn đề gì?</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body p-5">
+                        <div class="form-group">
+                            <a href="#"
+                               class="btn btn-outline-warning form-control form-control-lg report">
+                                Trùng nội dung
+                            </a>
+                        </div>
+                        <div class="form-group">
+                            <a href="#"
+                               class="btn btn-outline-warning form-control form-control-lg report">
+                                Lừa đảo
+                            </a>
+                        </div>
+                        <div class="form-group">
+                            <a href="#"
+                               class="btn btn-outline-warning form-control form-control-lg report">
+                                Không đúng sự thật
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="modal fade" id="modal-reportStepTwo">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-header text-center">
+                        <h5 class="modal-title text-center">Vui lòng cung cấp thêm thông tin</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        <div class="form-group">
+                            <textarea class="form-control form-control-lg" placeholder="Mô tả dấu hiệu lừa đảo" rows="3"></textarea>
+                        </div>
+                        <div class="form-group">
+                            <small class="form-text text-muted">
+                                Thông tin để chúng tôi liên lạc với bạn khi cần thiết
+                            </small>
+                        </div>
+                        <div class="form-group">
+                            <input type="password" class="form-control form-control-lg" placeholder="Điện thoại của bạn" />
+                        </div>
+                        <div class="form-group">
+                            <input type="password" class="form-control form-control-lg" placeholder="Emai thoại của bạn" />
+                        </div>
+                        <div class="form-group">
+                            <button class="btn btn-warning form-control">Gửi báo cáo</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </main>
+
+    <section id="script">
+        <script src="/Scripts/jquery-3.0.0.js"></script>
+        <script src="/Scripts/popper.js"></script>
+        <script src="/Scripts/bootstrap.js"></script>
+        <script src="/Scripts/jquery.uploadPreview.js"></script>
+
+        <!-- Select 2 -->
+        <script src="/plugin/taginput/js/select2.js"></script>
+        <script src="/plugin/taginput/js/customerSelect2.js"></script>
+
+        <script src="/Scripts/script.js"></script>
+        <script type="text/javascript">
+            $(document).ready(function () {
+                $.uploadPreview({
+                    input_field: "#image-upload",   // Default: .image-upload
+                    preview_box: "#image-preview",  // Default: .image-preview
+                    label_field: "#image-label",    // Default: .image-label
+                    label_default: "Chọn hình",   // Default: Choose File
+                    label_selected: "Đổi hình",  // Default: Change File
+                    no_label: false                 // Default: false
+                });
+            });
+        </script>
+    </section>
+</body>
+</html>
